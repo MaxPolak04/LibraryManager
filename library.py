@@ -1,19 +1,30 @@
-from book import Book
+from book import Book, BookNotFoundError
 from author import Author
 
 
 class Library:
     def __init__(self):
         self.books_in_library = self.init_books()
+        self.authors = self.init_authors()
 
     def display_books_in_library(self):
-        pass
+        for idx, book in enumerate(self.books_in_library):
+            print(f'{idx}. {book}')
 
-    @staticmethod
-    def init_authors():
-        return [Author('J.R.R Tolkien'), Author('Saifedean Ammous'), Author('Brian Ward'), Author('Stephen King')]
+    def return_book(self, book_idx):
+        for idx, book in enumerate(self.books_in_library):
+            if book_idx == idx:
+                return book
+        raise BookNotFoundError('Book with this index was not found!')
 
-    # @staticmethod
+    def init_authors(self):
+        authors = [Author('J.R.R Tolkien'), Author('Saifedean Ammous'), Author('Brian Ward'), Author('Stephen King')]
+        for author in authors:
+            for book in self.books_in_library:
+                if author.author_full_name == book.author:
+                    author.add_books(book)
+        return authors
+
     def init_books(self):
         return [
             Book('The Lord of the Rings - The Fellowship of the Ring', 'J.R.R Tolkien', 1937),

@@ -7,5 +7,6 @@ class Book:
     def __str__(self):
         return f'"{self.title}" by {self.author} ({self.year})'
 
-    def display_book_info(self):
-        pass
+
+class BookNotFoundError(Exception):
+    pass
