@@ -27,16 +27,12 @@ It was one of my first object-oriented programming (OOP) projects and a valuable
 
 1. **Clone the repository:**
 
-```bash
-git clone https://github.com/MaxPolak04/LibraryManager.git
-cd LibraryManager
-```
+`git clone https://github.com/MaxPolak04/LibraryManager.git`
+`cd LibraryManager`
 
 2. **Run the application:**
 
-```bash
-python main.py
-```
+`python main.py`
 
 > ✅ Make sure you have **Python 3** installed.  
 > 🧩 No external libraries are required.
@@ -50,7 +46,7 @@ This project helped me understand the basics of building structured Python appli
 ### 🧠 Key Takeaways
 
 - 🔹 How to define and work with classes and methods  
-- 🔹 Separating responsibilities between objects (e.g., `Library` vs `User`)  
+- 🔹 Separating responsibilities between objects (e.g., 'Library' vs 'User')  
 - 🔹 Designing a user-friendly CLI experience  
 - 🔹 Importance of naming, readability, and keeping code clean — even in small scripts
 
@@ -67,3 +63,12 @@ This project helped me understand the basics of building structured Python appli
 
 **Maksymilian Polak**  
 🔗 [GitHub Profile](https://github.com/MaxPolak04)
+
+---
+
+## 📄 License
+
+This project is licensed under the  
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)  
+**Creative Commons Attribution-NonCommercial 4.0 International License.**  
+You are free to share and adapt the material for non-commercial purposes, as long as proper credit is given.
